@@ -1,0 +1,35 @@
+<h1 class="title">Ingrese su producto</h1>
+<form id="form" class="form" method="post">
+    <label>Nombre del producto:</label>
+    <input name="product">
+    <label>Precio del producto:</label>
+    <input name="price">
+    <label>URL de la imágen del producto:</label>
+    <input name="url">
+    <button class="btn" type="submit">Guardar</button>
+    <label id="noData"></label>
+</form>
+<table class="table">
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Imágen</th>
+    </tr>
+</table>
+<div class="chat">
+    <p>Ingresa tu email:</p>
+    <input id="inputEmail" type="email">
+    <p id="noInfo"></p>
+    <div id="chatLogs">
+    
+    </div>
+    <form id='chatBox'>
+        <input name="message">
+        <button id="sendMessage" type="submit">Enviar</button>
+        <div id="noInfo"></div>
+    </form>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="index.js"></script>
